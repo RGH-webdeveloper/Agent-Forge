@@ -1,0 +1,16 @@
+body {
+    font-family: sans-serif;
+   
+}
+
+:root {
+    --darkreader-background-ffffff: #181a1b;
+    --darkreader-text-000000: #e8e6e3;
+    --darkreader-border-4c4c4c: #736b5e;
+    --darkreader-text-111827: #d6d3cd;
+    --darkreader-text-f3f4f6: #e1dfdb;
+    --darkreader-background-030712: #02060e;
+    --darkreader-background-10b9811a: rgba(13, 148, 103, 0.1);
+    --darkreader-background-002c224d: rgba(0, 35, 27, 0.3);
+    --darkreader-text-34d399: #47d7a3;
+}
