@@ -1,11 +1,15 @@
-import React, { useEffect, useEffectEvent, useState } from "react";
 import "./App.css";
-import { BarLoader, PropagateLoader } from "react-spinners";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { RouterProvider } from "react-router";
+import router from "./routes";
+import { Col, Container, Row } from "react-bootstrap";
 const App = () => {
+  console.log(router);
   return (
     <>
-      <div>
-        <h1>Agent Forge</h1>
+      <RouterProvider router={router} />
+      <div className="container d-flex">
+
       </div>
     </>
   );
