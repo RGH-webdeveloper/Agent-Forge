@@ -27,9 +27,11 @@
     align-items: center;
     justify-content: center;
 }
-.page_logo > .BsHexagonFill {
+.BsHexagonFill{
     position: absolute;
 }
 .page_logo > span {
-    position: inherit;
+    position: inherit !important;
+    left: 10px;
+    z-index: 10;
 }

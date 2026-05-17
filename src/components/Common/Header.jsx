@@ -5,11 +5,11 @@ import "./Header.css";
 const Header = () => {
   return (
     <>
-      <div className="container">
+      <div>
         <div className="header_parent_division">
           <div className="page_logo_division">
             <div className="page_logo">
-              <BsHexagonFill color="#47d7a3" size={35} />
+              <BsHexagonFill color="#47d7a3" size={35} className="BsHexagonFill" />
               <span>
                 <IoIosFlash color="white" size={25} />
               </span>
