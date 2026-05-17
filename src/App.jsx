@@ -8,9 +8,6 @@ const App = () => {
   return (
     <>
       <RouterProvider router={router} />
-      <div className="container d-flex">
-
-      </div>
     </>
   );
 };

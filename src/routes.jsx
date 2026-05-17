@@ -5,30 +5,37 @@ import Contact from "./components/Contact/Contact";
 import Integration from "./components/Integration";
 import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";
+import RootLayout from "./components/Layouts/RootLayout";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-  {
-    path: "/integration",
-    element: <Integration />,
-  },
-  {
-    path: "/Pricing",
-    element: <Pricing />,
-  },
-  {
-    path: "/blog",
-    element: <Blog />,
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/integration",
+        element: <Integration />,
+      },
+      {
+        path: "/Pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+    ],
   },
 ]);
 export default router;
