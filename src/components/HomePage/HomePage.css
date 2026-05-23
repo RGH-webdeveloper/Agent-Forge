@@ -1,0 +1,42 @@
+:root {
+    --darkreader-background-ffffff: #181a1b;
+    --darkreader-text-000000: #e8e6e3;
+    --darkreader-border-4c4c4c: #736b5e;
+    --darkreader-text-111827: #d6d3cd;
+    --darkreader-text-f3f4f6: rgb(225, 223, 219);
+    --darkreader-background-030712: #02060e;
+    --darkreader-background-10b9811a: rgba(13, 148, 103, 0.1);
+    --darkreader-background-002c224d: rgba(0, 35, 27, 0.3);
+    --darkreader-text-34d399: #47d7a3;
+}
+/* Plaid pattern background */
+.plaid-background {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--darkreader-background-030712);
+    /* Base color */
+
+    /* Create plaid pattern using multiple gradients */
+    background-image:
+        /* Vertical stripes */
+
+        /* Thicker vertical lines for classic plaid */
+        repeating-linear-gradient(90deg,
+            rgba(225, 223, 219, 0.1) 0px,
+            rgba(225, 223, 219, 0.1) 0px,
+            transparent 1px,
+            transparent 70px),
+        /* Thicker horizontal lines */
+        repeating-linear-gradient(0deg,
+            rgba(225, 223, 219, 0.1) 0px,
+            rgba(225, 223, 219, 0.1) 0px,
+            transparent 1px,
+            transparent 85px);
+
+
+}
+/* Make sure content appears above the overlay */
+.plaid-background>* {
+    position: relative;
+    z-index: 2;
+}

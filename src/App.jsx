@@ -1,12 +1,13 @@
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { RouterProvider } from "react-router";
 import router from "./routes";
-import { Col, Container, Row } from "react-bootstrap";
+import ScrollProgressBar from "./components/ScrollProgressBar/ScrollProgressBar";
+import "./App.css"
 const App = () => {
   console.log(router);
   return (
     <>
+    <ScrollProgressBar></ScrollProgressBar>
       <RouterProvider router={router} />
     </>
   );

@@ -2,10 +2,11 @@ import { createBrowserRouter } from "react-router";
 import HomePage from "./components/HomePage/HomePage";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Integration from "./components/Integration";
 import Pricing from "./components/Pricing/Pricing";
 import Blog from "./components/Blog/Blog";
 import RootLayout from "./components/Layouts/RootLayout";
+import Platform from "./components/Platform/Platform";
+import Integrations from "./components/Integration/Integrations"
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
+        path:"/platform",
+        element: <Platform/>
+      },
+      {
         path: "/about",
         element: <About />,
       },
@@ -24,11 +29,11 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "/integration",
-        element: <Integration />,
+        path: "/integrations",
+        element : <Integrations/>
       },
       {
-        path: "/Pricing",
+        path: "/pricing",
         element: <Pricing />,
       },
       {
