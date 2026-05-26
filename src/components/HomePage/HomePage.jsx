@@ -3,6 +3,7 @@ import "./HomePage.css";
 import Platform from "../Platform/Platform";
 import { Spinner } from "react-bootstrap";
 import homePageTitle from "./homePageTitle";
+import CustomButton from "../Common/CustomButton";
 
 const HomePage = () => {
   const [currentTitle, setCurrentTitle] = useState(homePageTitle[0]);
@@ -40,7 +41,7 @@ const HomePage = () => {
                   <span>Trusted by 10,000+ developers worldwide</span>
                 </div>
               </div>
-              <div className="homepage_title container">
+              <div className="homepage_title ">
                 <h1>
                   <span className="d-block">Build Autonomous</span>
                   <span
@@ -50,12 +51,16 @@ const HomePage = () => {
                   </span>
                 </h1>
                 <div className="d-flex justify-content-center align-center mt-4">
-                  <p className="text-center col-6">
+                  <p className="text-center container">
                     Design, deploy, and orchestrate intelligent AI agents that
-                    automate complex tasks. From single-purpose bots to
-                    multi-agent teams, AgentForge gives you the building blocks
+                    automate complex tasks. <br /> From single-purpose bots to
+                    multi-agent teams, AgentForge gives <br /> you the building blocks
                     to ship AI-powered automation at scale.
                   </p>
+                </div>
+                <div className="d-flex justify-content-center align-center gap-5 mt-5">
+                  <CustomButton text="Custom Text" fontSize={"20px"}></CustomButton>
+                  <CustomButton text="Custom Text" fontSize={"20px"}></CustomButton>
                 </div>
               </div>
             </div>

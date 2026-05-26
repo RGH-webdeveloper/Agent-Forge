@@ -7,8 +7,7 @@ import { LuSunMedium } from "react-icons/lu";
 import { IoMenu, IoMoonOutline } from "react-icons/io5";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Button from "react-bootstrap/Button";
-import { BiColorFill } from "react-icons/bi";
+import CustomButton from "./CustomButton";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -110,10 +109,11 @@ const Header = () => {
               )}
             </button>
           </div>
-          <div className="start_building_button text-nowrap">
-            <button className="btn btn-success d-none d-sm-flex">
+          <div className="start_building_button text-nowrap d-none d-sm-flex">
+              <CustomButton text="Start Building"></CustomButton>
+            {/* <button className="btn btn-success d-none d-sm-flex">
               <Link to="/Pricing" className="text-decoration-none text-reset">Start Building</Link>
-            </button>
+            </button> */}
           </div>
           <div className="hamburger_menue">
             {["top"].map((placement, idx) => (

@@ -4,11 +4,12 @@
     --darkreader-border-4c4c4c: #736b5e;
     --darkreader-text-111827: #d6d3cd;
     --darkreader-text-f3f4f6: rgb(225, 223, 219);
-    --darkreader-background-030712: #02060e;
+    --darkreader-background-030712: #d8b711;
     --darkreader-background-10b9811a: rgba(13, 148, 103, 0.1);
     --darkreader-background-002c224d: rgba(0, 35, 27, 0.3);
     --darkreader-text-34d399: #47d7a3;
 }
+
 /* Plaid pattern background */
 .plaid-background {
     position: relative;
@@ -51,12 +52,12 @@
         content: '';
         position: absolute;
         top: 0%;
-        left: 30%;
-        width: 430px;
+        left: 25%;
+        width: 530px;
         height: 300px;
         background: rgba(71, 215, 163, 0.1);
         border-radius: 50%;
-        filter: blur(60px);
+        filter: blur(120px);
         pointer-events: none;
         z-index: 1;
     }
@@ -71,13 +72,13 @@
     .circle_1 {
         position: absolute;
         top: 98%;
-        left: 52%;
+        left: 45%;
         transform: translate(-50%, -50%);
-        width: 400px;
+        width: 500px;
         height: 400px;
-        background: rgba(71, 215, 163, 0.2);
+        background: rgba(71, 215, 163, 0.1);
         border-radius: 50%;
-        filter: blur(120px);
+        filter: blur(130px);
         pointer-events: none;
         z-index: 1;
     }
@@ -91,10 +92,10 @@
         bottom: 20%;
         right: -8%;
         width: 350px;
-        height: 300px;
-        background: rgba(71, 215, 163, 0.2);
+        height: 450px;
+        background: rgba(71, 215, 163, 0.1);
         border-radius: 50%;
-        filter: blur(60px);
+        filter: blur(130px);
         pointer-events: none;
         z-index: 1;
     }
@@ -142,16 +143,18 @@
     justify-content: center;
     flex-direction: column;
     color: #ffff;
-    font-size: clamp(38px, 6vw, 75px);
-    /* Minimum 24px, scales with screen, maximum 68px */
+  
     line-height: 1.2;
-    font-weight:500;
+    font-weight: 500;
     margin-top: 1rem;
 
 }
-.homepage_title > div {
+.homepage_title>div {
     color: #9ca3af;
+  font-size: clamp(3px, 5vw, 22px);
+    line-height: 30px;
 }
+
 .rotating-text {
     display: inline-block;
     color: #47d7a3;
