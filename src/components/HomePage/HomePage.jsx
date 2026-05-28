@@ -41,12 +41,10 @@ const HomePage = () => {
                   <span>Trusted by 10,000+ developers worldwide</span>
                 </div>
               </div>
-              <div className="homepage_title ">
+              <div className="homepage_title">
                 <h1>
                   <span className="d-block">Build Autonomous</span>
-                  <span
-                    className={`rotating-text ${isAnimating ? "animate-out" : "animate-in"}`}
-                  >
+                  <span className={`rotating-text ${isAnimating ? "animate-out" : "animate-in"}`}>
                     {currentTitle.name}
                   </span>
                 </h1>
@@ -54,13 +52,19 @@ const HomePage = () => {
                   <p className="text-center container">
                     Design, deploy, and orchestrate intelligent AI agents that
                     automate complex tasks. <br /> From single-purpose bots to
-                    multi-agent teams, AgentForge gives <br /> you the building blocks
-                    to ship AI-powered automation at scale.
+                    multi-agent teams, AgentForge gives <br /> you the building
+                    blocks to ship AI-powered automation at scale.
                   </p>
                 </div>
                 <div className="d-flex justify-content-center align-center gap-5 mt-5">
-                  <CustomButton text="Custom Text" fontSize={"20px"}></CustomButton>
-                  <CustomButton text="Custom Text" fontSize={"20px"}></CustomButton>
+                  <CustomButton
+                    text="Custom Text"
+                      fontSize = "clamp(12px , 5vw , 22px)"
+                  ></CustomButton>
+                  <CustomButton
+                    text="Custom Text"
+                    fontSize = "clamp(12px , 5vw , 22px)"
+                  ></CustomButton>
                 </div>
               </div>
             </div>

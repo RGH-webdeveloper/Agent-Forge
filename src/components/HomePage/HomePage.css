@@ -143,15 +143,16 @@
     justify-content: center;
     flex-direction: column;
     color: #ffff;
-  
+     font-size: clamp(10px, 10vw, 65px);
     line-height: 1.2;
     font-weight: 500;
     margin-top: 1rem;
 
 }
+
 .homepage_title>div {
     color: #9ca3af;
-  font-size: clamp(3px, 5vw, 22px);
+    font-size: clamp(3px, 5vw, 22px);
     line-height: 30px;
 }
 
