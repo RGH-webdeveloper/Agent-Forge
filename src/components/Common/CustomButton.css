@@ -1,4 +1,0 @@
-.custom-btn {
-  font-size: clamp(10px, 2vw, 22px);
-  padding: clamp(8px, 1vw, 12px) clamp(16px, 3vw, 30px);
-}

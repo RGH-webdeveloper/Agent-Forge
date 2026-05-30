@@ -58,12 +58,12 @@ const HomePage = () => {
                 </div>
                 <div className="d-flex justify-content-center align-center gap-5 mt-5">
                   <CustomButton
-                    text="Custom Text"
-                      fontSize = "clamp(12px , 5vw , 22px)"
+                    text="Start Building Free ->"
+                      fontSize = "clamp(12px , 5vw , 20px)"
                   ></CustomButton>
                   <CustomButton
-                    text="Custom Text"
-                    fontSize = "clamp(12px , 5vw , 22px)"
+                    text="View Documantaion"
+                    fontSize = "clamp(12px , 5vw , 20px)"
                   ></CustomButton>
                 </div>
               </div>
