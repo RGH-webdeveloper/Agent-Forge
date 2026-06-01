@@ -62,9 +62,14 @@ const Header = () => {
               <Link to="/About">About</Link>
               <Link to="/Blog">Blog</Link>
               <Link to="/Contact">Contact</Link>
-              <button className="btn btn-success">
-                <Link to="/Pricing" className="text-decoration-none text-reset">Start Building</Link>
-              </button>
+              <CustomButton
+                fontSize={"14px"}
+                fontWeight={"300"}
+                variant="success"
+                bootstrapClass="d-sm-none"
+              >
+                Start Building
+              </CustomButton>
             </nav>
           </Offcanvas.Body>
         </Offcanvas>
@@ -73,59 +78,64 @@ const Header = () => {
   };
   return (
     <>
-      <div className="header_division p-3">
-        <div className="header_logo">
-          <Link to="/" className="gap-2">
-            <div className="header_logo_svg_division position-relative">
-              <BsFillHexagonFill color="#47d7a3" size={30} />
-              <IoIosFlash
-                color="#e8e6e3"
-                className="position-absolute top-50 start-50 translate-middle"
-              />
+      <header className="header_wrappper">
+        <div className="header_division p-3 container">
+          <div className="header_logo">
+            <Link to="/" className="gap-2">
+              <div className="header_logo_svg_division position-relative">
+                <BsFillHexagonFill color="#47d7a3" size={30} />
+                <IoIosFlash
+                  color="#e8e6e3"
+                  className="position-absolute top-50 start-50 translate-middle"
+                />
+              </div>
+              <div className="header_logo_text_division">
+                <span>Agent</span>
+                <span>Forge</span>
+              </div>
+            </Link>
+          </div>
+          <div className="header_nav d-none d-lg-flex p-0">
+            <nav className="navbar navbar-expand-lg">
+              <Link to="/Platform">Platform</Link>
+              <Link to="/Pricing">Pricing</Link>
+              <Link to="/Integrations">Integrations</Link>
+              <Link to="/About">About</Link>
+              <Link to="/Blog">Blog</Link>
+              <Link to="/Contact">Contact</Link>
+            </nav>
+          </div>
+          <div className="header_right_part gap-1">
+            <div className="theme_togle d-flex justify-content-center align-center">
+              <button className="btn" type="button" onClick={toggleTheme}>
+                {isDarkMode ? (
+                  <LuSunMedium size={20} />
+                ) : (
+                  <IoMoonOutline size={20} />
+                )}
+              </button>
             </div>
-            <div className="header_logo_text_division">
-              <span>Agent</span>
-              <span>Forge</span>
+            <div className="start_building_button text-nowrap d-none d-sm-flex ">
+              <CustomButton
+                fontSize={"14px"}
+                fontWeight={"300"}
+                variant="success"
+              >
+                Start Building
+              </CustomButton>
             </div>
-          </Link>
-        </div>
-        <div className="header_nav d-none d-lg-flex p-0">
-          <nav className="navbar navbar-expand-lg">
-            <Link to="/Platform">Platform</Link>
-            <Link to="/Pricing">Pricing</Link>
-            <Link to="/Integrations">Integrations</Link>
-            <Link to="/About">About</Link>
-            <Link to="/Blog">Blog</Link>
-            <Link to="/Contact">Contact</Link>
-          </nav>
-        </div>
-        <div className="header_right_part gap-1">
-          <div className="theme_togle d-flex justify-content-center align-center">
-            <button className="btn" type="button" onClick={toggleTheme}>
-              {isDarkMode ? (
-                <LuSunMedium size={20} />
-              ) : (
-                <IoMoonOutline size={20} />
-              )}
-            </button>
-          </div>
-          <div className="start_building_button text-nowrap d-none d-sm-flex">
-              <CustomButton text="Start Building"></CustomButton>
-            {/* <button className="btn btn-success d-none d-sm-flex">
-              <Link to="/Pricing" className="text-decoration-none text-reset">Start Building</Link>
-            </button> */}
-          </div>
-          <div className="hamburger_menue">
-            {["top"].map((placement, idx) => (
-              <OffCanvasExample
-                key={idx}
-                placement={placement}
-                name=<IoMenu size={20} color="#afa99e" />
-              />
-            ))}
+            <div className="hamburger_menue">
+              {["top"].map((placement, idx) => (
+                <OffCanvasExample
+                  key={idx}
+                  placement={placement}
+                  name=<IoMenu size={20} color="#afa99e" />
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };

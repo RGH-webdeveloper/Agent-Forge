@@ -14,34 +14,15 @@
 .plaid-background {
     position: relative;
     min-height: 100vh;
-    background-color: var(--darkreader-background-030712);
-    /* Base color */
-
-    /* Create plaid pattern using multiple gradients */
+    background: #030712;
     background-image:
-        /* Vertical stripes */
-
-        /* Thicker vertical lines for classic plaid */
-        repeating-linear-gradient(90deg,
-            rgba(225, 223, 219, 0.1) 0px,
-            rgba(225, 223, 219, 0.1) 0px,
-            transparent 1px,
-            transparent 70px),
-        /* Thicker horizontal lines */
-        repeating-linear-gradient(0deg,
-            rgba(225, 223, 219, 0.1) 0px,
-            rgba(225, 223, 219, 0.1) 0px,
-            transparent 1px,
-            transparent 85px);
-
-
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
 }
 
 /* Make sure content appears above the overlay */
-.plaid-background>* {
-    position: relative;
-    z-index: 10;
-}
+
 
 .multi_blur_circles {
     position: relative;
@@ -125,7 +106,7 @@
 
 .trusted_by_badge>span :first-child {
     position: absolute;
-    left: 20.8px;
+    left: 21px;
     bottom: 6px;
 }
 
@@ -143,7 +124,7 @@
     justify-content: center;
     flex-direction: column;
     color: #ffff;
-     font-size: clamp(10px, 10vw, 65px);
+    font-size: clamp(10px, 10vw, 65px);
     line-height: 1.2;
     font-weight: 500;
     margin-top: 1rem;
@@ -169,6 +150,108 @@
 /* Animation for when text is entering (fade in + move up) */
 .animate-in {
     animation: fadeInUp 0.5s ease-in forwards;
+}
+
+.stats {
+    margin-top: 1rem;
+    padding: 60px 20px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #1f2937;
+    padding-top: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stat-item {
+}
+
+.stat-number {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+}
+
+
+.rounded_full_red {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fb2c36;
+}
+
+.rounded_full_yellow {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d8b711;
+}
+
+.rounded_full_green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #00c951;
+}
+
+.agent_py {
+    background-color: #111827cc;
+    border : 1px solid rgb(255, 255, 255 , 10%);
+    box-shadow: 0px -5px 40px 0px #10b9811a;
+}
+.agent_py_header{
+    font-size: 14px;
+    border-bottom: 1px solid rgb(255, 255, 255 , 10%);
+}
+.agent_py_body span {
+    font-weight: 300;
+    line-height: 1.7rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace !important;
+}
+
+.agent_py_body .c-success {
+    color: #34d399;
+}
+
+.agent_py_body .c-white {
+    color: #d1d5db;
+}
+
+.agent_py_body .c-info {
+    color: #67e8f9;
+}
+
+.agent_py_body .c-primary {
+    color: #6b7280;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 2 columns, smaller text */
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
 }
 
 /* Keyframes for fade out + move down */

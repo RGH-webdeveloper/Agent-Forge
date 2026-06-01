@@ -1,0 +1,42 @@
+.primary {
+  background-color: rgb(5, 150, 105);
+  color: white;
+  text-decoration: none;
+  transition: all 100ms ease-in;
+  padding: 8px;
+}
+
+.primary:hover {
+  background-color: rgb(6, 170, 118);
+  box-shadow: 0 0 35px rgba(5, 150, 105, 0.5);
+}
+
+.secondary {
+  border: 1px solid #374151;
+  color: #d1d5db;
+  text-decoration: none;
+  transition: all 200ms ease;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.secondary:hover {
+background-color: rgba(255, 255, 255, 0.10);
+  border: 1px solid #536175;
+}
+
+.success {
+  background-color: rgb(5, 150, 105);
+  color: white;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  padding: 8px;
+}
+
+.success:hover {
+  background-color: rgb(11, 120, 86);
+}
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

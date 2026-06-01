@@ -13,14 +13,18 @@
     --darkreader-text-4b5563: #b1aaa0;
     --darkreader-background-f9fafb: #1b1d1e;
     --darkreader-background-111827: #0e131f;
+    --darkreader-boder-111827 : #1f2937;
+}
+
+.header_wrappper {
+    background-color:#030712;
+    border-bottom: 1px solid var(--darkreader-boder-111827);
 }
 
 .header_division {
-    background-color: var(--darkreader-background-030712) ;
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
 }
 
 .header_logo>a {
@@ -40,10 +44,12 @@ nav a {
     font-weight: bolder;
     color: #e8e6e3;
     padding: 0 !important;
+    font-size: 21px;
 }
 
 .header_logo_text_division span:last-child {
     color: #47d7a3;
+    font-size: 20px;
     font-weight: bolder;
     padding: 0 !important;
 }
@@ -80,6 +86,7 @@ nav a {
 .start_building_button {
     text-align: center;
 }
+
 .custom_offcanvas {
-  background-color: var(--darkreader-background-030712) !important;
+    background-color: var(--darkreader-background-030712) !important;
 }
