@@ -158,17 +158,19 @@
 }
 
 .stats-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
     border-top: 1px solid #1f2937;
     padding-top: 3rem;
     max-width: 1000px;
+    gap: 2rem;
     margin: 0 auto;
     text-align: center;
 }
 
 .stat-item {
+
+    flex-direction: column;
 }
 
 .stat-number {

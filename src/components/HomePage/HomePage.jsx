@@ -7,7 +7,7 @@ import CustomButton from "../Common/CustomButton";
 import { FaRegFileAlt } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import codeLines from "../../../data/codeLine";
-import Stats from "../Common/stats";
+import Stats from "../Common/Stats";
 const HomePage = () => {
   const [currentTitle, setCurrentTitle] = useState(homePageTitle[0]);
   const [isAnimating, setIsAnimating] = useState(false);
