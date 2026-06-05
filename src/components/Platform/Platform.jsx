@@ -3,7 +3,7 @@ import React from 'react'
 const Platform = () => {
   return (
     <div>
-      Platform
+      <h1>Platform</h1>
     </div>
   )
 }

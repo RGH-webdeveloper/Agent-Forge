@@ -8,6 +8,7 @@ import { FaRegFileAlt } from "react-icons/fa";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import codeLines from "../../../data/codeLine";
 import Stats from "../Common/Stats";
+import statsData from "../Common/statsData";
 const HomePage = () => {
   const [currentTitle, setCurrentTitle] = useState(homePageTitle[0]);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -89,7 +90,11 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <Stats/>
+            <section className="stats">
+              <div className="stats-grid">
+                <Stats borderTopLine={"1px solid #1f2937"} />
+              </div>
+            </section>
             <div className="d-flex justify-content-center align-items-center">
               <div className="agent_py rounded-4 col-11 col-sm-10 col-md-8 col-xxl-5">
                 <div className="agent_py_header d-flex justify-content-start px-4 py-2 align-items-center gap-2">
@@ -112,7 +117,18 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div>
+            <section className="stats row">
+              <div className="stats-grid stats-grid-wide">
+                  <Stats
+                    animate = {true}
+                    textColor={"#34d399"}
+                    textFontSize={"clamp(2rem , 4vw , 2.5rem)"}
+                    textFontWeight={"500"}
+                    labelTextColor={"#9ca3af"}
+                  />
+              </div>
+            </section>
+            <div className="container">
               <Platform />
             </div>
           </div>

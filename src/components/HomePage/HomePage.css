@@ -154,22 +154,32 @@
 
 .stats {
     margin-top: 1rem;
-    padding: 60px 20px;
+     border-bottom: 1px solid rgb(255, 255, 255, 10%);
 }
 
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    border-top: 1px solid #1f2937;
-    padding-top: 3rem;
-    max-width: 1000px;
-    gap: 2rem;
+    grid-template-columns: repeat(4 , 2fr);
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem;
+    max-width: 1100px;
     margin: 0 auto;
     text-align: center;
+
 }
 
-.stat-item {
+.stats-grid.stats-grid-wide {
+    background-color: #111827;
+    align-items: center;
+    margin-top: 4rem;
+}
 
+
+.stats-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -177,10 +187,11 @@
     font-size: 2.1rem;
     font-weight: 700;
     color: #ffffff;
+
 }
 
 .stat-label {
-    font-size: 0.95rem;
+    font-size:15px;
 }
 
 
@@ -207,13 +218,17 @@
 
 .agent_py {
     background-color: #111827cc;
-    border : 1px solid rgb(255, 255, 255 , 10%);
-    box-shadow: 0px -5px 40px 0px #10b9811a;
+    border: 1px solid rgb(255, 255, 255, 10%);
+    box-shadow: 28px 21px 50px 1px #10b9811a, -24px -18px 50px 1px #10b9811a;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
-.agent_py_header{
+
+.agent_py_header {
     font-size: 14px;
-    border-bottom: 1px solid rgb(255, 255, 255 , 10%);
+    border-bottom: 1px solid rgb(255, 255, 255, 10%);
 }
+
 .agent_py_body span {
     font-weight: 300;
     line-height: 1.7rem;
@@ -251,9 +266,7 @@
         gap: 24px;
     }
 
-    .stat-number {
-        font-size: 1.8rem;
-    }
+
 }
 
 /* Keyframes for fade out + move down */
